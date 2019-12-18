@@ -1,5 +1,5 @@
 
-function love.load()
+function love.load(arg)
 
 end
 
