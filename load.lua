@@ -20,11 +20,11 @@ function Sp1.LoadSprites()
 
 	sprites.gems = LoadSpriteList(
 		{"Sprites/png/element_blue_diamond_glossy.png", 
-		"Sprites/png/element_green_polygon_glossy.png", 
-		"Sprites/png/element_grey_square_glossy.png",
+		"Sprites/png/element_green_diamond_glossy.png", 
+		"Sprites/png/element_grey_diamond_glossy.png",
 		"Sprites/png/element_purple_diamond_glossy.png",
-		"Sprites/png/element_red_polygon_glossy.png",
-		"Sprites/png/element_yellow_square_glossy.png"
+		"Sprites/png/element_red_diamond_glossy.png",
+		"Sprites/png/element_yellow_diamond_glossy.png"
 	})
 
 	sprites.slector = LoadSpriteList({"Sprites/png/selectorA.png", "Sprites/png/selectorB.png"})
