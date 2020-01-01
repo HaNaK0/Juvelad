@@ -1,4 +1,5 @@
-Game = require("load")
+loader = require("juvelad.load")
+Game = {}
 
 function love.load(args)
 	Game.sprites = Game.LoadSprites()

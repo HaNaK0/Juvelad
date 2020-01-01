@@ -32,11 +32,12 @@ function Sp1.LoadSprites()
 	return sprites
 end
 
-function Sp1.GameSetup(sizeX, sizeY)
-	Sp1.game = {}
-	local game = Sp1.game
+function Sp1.LoadPlayingfield(sizeX, sizeY, numberOftypes, cellSize)
+	local playingfield = {size = {x = size, y = sizeY}, }
 
-	game.size = {x = sizeX, y = sizeY}
+	for i = 1, playingfield.size.x * playingfield.size.y do
+		playingfield[i] = math.random(numberOftypes)
+	end
 end
 
 return Sp1
