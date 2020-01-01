@@ -1,20 +1,17 @@
 loader = require("juvelad.load")
-Game = {}
+game = require("juvelad.game")
 
 function love.load(args)
-	Game.sprites = Game.LoadSprites()
-	number = 0;
-	timer = 0;
+	local sprites = loader.LoadSprites()
+
+	game:SetSpritesAndOrigin(sprites.gems, sprites.cursor, 5, 5)
+	game:StartLevel(loader.LoadPlayingfield(5, 5, table.getn(sprites.gems)))
 end
 
 function love.update(deltaTime)
-	timer = timer + deltaTime;
-	if timer > 1 then
-		number = (number + 1) % table.getn(Game.sprites.gems)
-		timer = 0
-	end
+
 end
 
 function love.draw()
-	love.graphics.draw(Game.sprites.gems[number + 1], 10, 10)
+	game:Draw()
 end
